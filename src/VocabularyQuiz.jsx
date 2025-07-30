@@ -27,7 +27,7 @@ function VocabularyQuiz({ sentence }) {
     setQuestionWord(randomWord);
 
     try {
-      const res = await fetch('http://localhost:5000/api/translate', {
+      const res = await fetch('https://englishproxy.vercel.app/api/translate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
