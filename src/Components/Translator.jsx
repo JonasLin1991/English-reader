@@ -14,7 +14,7 @@ function Translator({ text, rate, voice }) {
 
 
   try {
-    const res = await fetch("https://englishproxy.vercel.app/api/translate", {
+    const res = await fetch("https://englishproxy.vercel.app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
